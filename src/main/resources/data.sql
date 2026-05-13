@@ -11,3 +11,12 @@ VALUES
 ('Fashion Fest', '2023-11-05'),
 ('MusicFest', '2024-01-25'),
 ('EcoAwareness Conclave', '2023-11-10')
+
+INSERT INTO event_sponsor(sponsorId, eventId)
+VALUES
+(1, 1),
+(1, 2),
+(2, 2),
+(3, 3),
+(3, 4),
+(4, 4)
