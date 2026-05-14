@@ -7,3 +7,23 @@
  */
 
 // Write your code here
+package com.example.eventmanagementsystem.repository;
+
+import java.util.List;
+
+import com.example.eventmanagementsystem.model.*;
+
+public interface EventRepository{
+
+    List<Event> getEvents();
+
+    Event getEventById(int eventId);
+
+    Event addEvent(Event event);
+
+    Event updateEvent(int eventId, Event event);
+
+    void deleteEvent(int eventId);
+
+    List<Sponsor> getSponsorsByEventId(int eventId);
+}
