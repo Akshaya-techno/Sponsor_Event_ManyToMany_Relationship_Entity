@@ -70,11 +70,11 @@ public class Sponsor {
         return industry;
     }
 
-    public void setEvent(List<Event> events) {
+    public void setEvents(List<Event> events) {
         this.events = events;
     }
 
-    public List<Event> getEvent() {
+    public List<Event> getEvents() {
         return events;
     }
 }
