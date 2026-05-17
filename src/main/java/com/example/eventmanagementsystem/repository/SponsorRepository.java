@@ -25,5 +25,5 @@ public interface SponsorRepository {
 
     void deleteSponsor(int sponsorId);
 
-    List<Sponsor> getEventsBySponsorId(int sponsorId);
+    List<Event> getEventsBySponsorId(int sponsorId);
 }

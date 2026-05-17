@@ -92,6 +92,9 @@ public class SponsorJpaService implements SponsorRepository {
             }
 
             List<Event> events = eventJpaRepository.findAllById(eventIds);
+            if (events.size() != eventIds.size()) {
+                throw new ResponseStatusException(HttpStatus.BAD_REQUEST);
+            }
 
             existingSponsor.setEvents(events);
 

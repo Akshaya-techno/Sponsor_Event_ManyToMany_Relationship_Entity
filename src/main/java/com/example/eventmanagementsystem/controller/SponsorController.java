@@ -55,4 +55,8 @@ public class SponsorController {
     public List<Event> getEventsBySponsorId(@PathVariable int sponsorId) {
         return sponsorJpaService.getEventsBySponsorId(sponsorId);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> Overall commit 1

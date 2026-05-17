@@ -33,7 +33,7 @@ public class Sponsor {
     private String industry;
 
     @ManyToMany
-    @JoinTable(name = "event_sponsor", joinColumns = @JoinColumn(name = "sponsorId"), inverseJoinColumns = @JoinColumn(name = "eventId"))
+    @JoinTable(name = "event_sponsor", joinColumns = @JoinColumn(name = "sponsorid"), inverseJoinColumns = @JoinColumn(name = "eventid"))
     @JsonIgnoreProperties("sponsors")
     private List<Event> events = new ArrayList<>();
 
