@@ -24,10 +24,10 @@ public class Sponsor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private int id;
+    private int sponsorId;
 
     @Column(name = "name")
-    private String name;
+    private String sponsorName;
 
     @Column(name = "industry")
     private String industry;
@@ -40,26 +40,26 @@ public class Sponsor {
     public Sponsor() {
     }
 
-    public Sponsor(int id, String name, String industry) {
-        this.id = id;
-        this.name = name;
+    public Sponsor(int sponsorId, String sponsorName, String industry) {
+        this.sponsorId = sponsorId;
+        this.sponsorName = sponsorName;
         this.industry = industry;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setSponsorId(int sponsorId) {
+        this.sponsorId = sponsorId;
     }
 
-    public int getId() {
-        return id;
+    public int getSponsorId() {
+        return sponsorId;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setSponsorName(String sponsorName) {
+        this.sponsorName = sponsorName;
     }
 
-    public String getName() {
-        return name;
+    public String getSponsorName() {
+        return sponsorName;
     }
 
     public void setIndustry(String industry) {

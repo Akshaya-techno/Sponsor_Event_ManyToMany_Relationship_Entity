@@ -13,7 +13,7 @@ import java.util.List;
 
 import com.example.eventmanagementsystem.model.*;
 
-public interface EventRepository{
+public interface EventRepository {
 
     List<Event> getEvents();
 

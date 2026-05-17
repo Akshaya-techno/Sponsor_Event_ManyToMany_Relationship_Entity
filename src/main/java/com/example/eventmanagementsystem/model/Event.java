@@ -23,10 +23,10 @@ public class Event {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private int id;
+    private int eventId;
 
     @Column(name = "name")
-    private String name;
+    private String eventName;
 
     @Column(name = "date")
     private String date;
@@ -38,26 +38,26 @@ public class Event {
     public Event() {
     }
 
-    public Event(int id, String name, String date) {
-        this.id = id;
-        this.name = name;
+    public Event(int eventId, String eventName, String date) {
+        this.eventId = eventId;
+        this.eventName = eventName;
         this.date = date;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setEventId(int eventId) {
+        this.eventId = eventId;
     }
 
-    public int getId() {
-        return id;
+    public int getEventId() {
+        return eventId;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setEventName(String eventName) {
+        this.eventName = eventName;
     }
 
-    public String getName() {
-        return name;
+    public String getEventName() {
+        return eventName;
     }
 
     public void setDate(String date) {
